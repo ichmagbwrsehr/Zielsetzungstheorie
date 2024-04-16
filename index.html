@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zielsetzungstheorie Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+
+        <h1>Zielsetzungstheorie Quiz</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Wer hat die Zielsetzungstheorie entwickelt?</p>
+                <label><input type="radio" name="q1" value="Edwin Locke und Gary Latham"> Edwin Locke und Gary Latham</label><br>
+                <label><input type="radio" name="q1" value="Karl Marx"> Karl Marx</label><br>
+                <label><input type="radio" name="q1" value="Martin Lohmann und Hans Ruchti"> Martin Lohmann und Hans Ruchti</label><br>
+            </div>
+            <div class="question">
+                <p>2. Was bewirkt die Zielsetzungstheorie?</p>
+                <label><input type="radio" name="q2" value="Mitarbeiter werden entmutigt und geben auf"> Mitarbeiter werden entmutigt und geben auf</label><br>
+                <label><input type="radio" name="q2" value="Spannungszustand, der zielgerichtetes Handeln fördert"> Spannungszustand, der zielgerichtetes Handeln fördert</label><br>
+            </div>
+            <div class="question">
+                <p>3. Wofür steht das S im SMART-Prinzip</p>
+                <label><input type="radio" name="q3" value="Schnell"> Schnell</label><br>
+                <label><input type="radio" name="q3" value="Sehr gut"> Sehr gut</label><br>
+                <label><input type="radio" name="q3" value="Spezifisch"> Spezifisch</label><br>
+            </div>
+            <div class="question">
+                <p>4. Wofür steht das M im SMART-Prinzip</p>
+                <label><input type="radio" name="q4" value="Mathe"> Mathe</label><br>
+                <label><input type="radio" name="q4" value="Akzeptiert"> Akzeptiert</label><br>
+                <label><input type="radio" name="q4" value="Messbar"> Messbar</label><br>
+                <label><input type="radio" name="q4" value="Machbar"> Machbar</label><br>
+            </div>
+            <div class="question">
+                <p>5. Wofür steht das A im SMART-Prinzip</p>
+                <label><input type="radio" name="q5" value="Annehmbar"> Annehmbar</label><br>
+                <label><input type="radio" name="q5" value="Akzeptiert"> Akzeptiert</label><br>
+                <label><input type="radio" name="q5" value="Abgelehnt"> Abgelehnt</label><br>
+                <label><input type="radio" name="q5" value="Absichtlich"> Absichtlich</label><br>
+            </div>
+            <div class="question">
+                <p>6. Wofür steht das R im SMART-Prinzip</p>
+                <label><input type="radio" name="q6" value="Ruchti"> Ruchti</label><br>
+                <label><input type="radio" name="q6" value="Richtig"> Richtig</label><br>
+                <label><input type="radio" name="q6" value="Realistisch"> Realistisch</label><br>
+                <label><input type="radio" name="q6" value="Rabatt"> Rabatt</label><br>
+            </div>
+            <div class="question">
+                <p>7. Wofür steht das T im SMART-Prinzip</p>
+                <label><input type="radio" name="q7" value="Theodizee"> Theodizee</label><br>
+                <label><input type="radio" name="q7" value="Tino"> Tino</label><br>
+                <label><input type="radio" name="q7" value="Toll"> Toll</label><br>
+                <label><input type="radio" name="q7" value="Just-In-Time"> Just-In-Time</label><br>
+                <label><input type="radio" name="q7" value="Technologie"> Technologie</label><br>
+                <label><input type="radio" name="q7" value="Terminierbar"> Terminierbar</label><br>
+                <label><input type="radio" name="q7" value="Tabellen"> Tabellen</label><br>
+                <label><input type="radio" name="q7" value="Temporär"> Temporär</label><br>
+            </div>
+            <div class="question">
+                <p>8. Die Leistung ist am höchsten, wenn die Herausforderung ... ist.</p>
+                <label><input type="radio" name="q8" value="sehr gering"> sehr gering</label><br>
+                <label><input type="radio" name="q8" value="gering"> gering</label><br>
+                <label><input type="radio" name="q8" value="mittel"> mittel</label><br>
+                <label><input type="radio" name="q8" value="hoch"> hoch</label><br>
+                <label><input type="radio" name="q8" value="unmöglich"> unmöglich</label><br>
+
+            </div>
+            <div class="question">
+                <p>9. Was lässt sich aus dieser Motivationstheorie ableiten?</p>
+                <label><input type="radio" name="q9" value="Die Grenzkosten"> Die Grenzkosten</label><br>
+                <label><input type="radio" name="q9" value="f(x)'"> f(x)'</label><br>
+                <label><input type="radio" name="q9" value="Der High Performance Cycle"> Der High Performance Cycle</label><br>
+                <label><input type="radio" name="q9" value="Nichts"> Nichts</label><br>
+                <label><input type="radio" name="q9" value="Kundenzufriedenheit"> Kundenzufriedenheit</label><br>
+            </div>
+            <button type="button" onclick="checkAnswers()">Antworten überprüfen</button>
+        </form>
+        <div id="result"></div>
+        <div id="gif-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="background-container">
+        <img src="image1.png" class="moving-image" id="image1">
+        <img src="image2.png" class="moving-image" id="image2">
+    </div>
+    <script src="bgscript.js"></script>
+</body>
+</html>
