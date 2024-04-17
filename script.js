@@ -8,8 +8,9 @@ function checkAnswers() {
         q6: "Realistisch",
         q7: "Terminierbar",
         q8: "hoch",
-        q9: "Der High Performance Cycle"
-
+        q9: "Der High Performance Cycle",
+        q10: "Unübersichtlich",
+        q11: "nichts davon"
     };
 
     let score = 0;
