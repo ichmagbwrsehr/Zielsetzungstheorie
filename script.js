@@ -45,6 +45,13 @@ function checkAnswers() {
         correctGIF.style.height = "auto";
         gifContainer.innerHTML = "";
         gifContainer.appendChild(correctGIF);
+
+        const correctPNG = document.createElement("img");
+        correctPNG.src = "neutral.png";
+        correctPNG.alt = "Correct PNG";
+        correctPNG.style.width = "200px";
+        correctPNG.style.height = "auto";
+        gifContainer.appendChild(correctPNG);
     } else {
         const incorrectGIF = document.createElement("img");
         incorrectGIF.src = "incorrect.gif";
@@ -53,5 +60,12 @@ function checkAnswers() {
         incorrectGIF.style.height = "auto";
         gifContainer.innerHTML = "";
         gifContainer.appendChild(incorrectGIF);
+
+        const incorrectPNG = document.createElement("img");
+        incorrectPNG.src = "falsch.png";
+        incorrectPNG.alt = "Incorrect PNG";
+        incorrectPNG.style.width = "200px";
+        incorrectPNG.style.height = "auto";
+        gifContainer.appendChild(incorrectPNG);
     }
 }
