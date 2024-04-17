@@ -37,8 +37,20 @@ function checkAnswers() {
 
     const gifContainer = document.getElementById("gif-container");
     if (score === Object.keys(answers).length) {
-        gifContainer.innerHTML = '<img src="correct.gif" alt="Correct GIF">';
+        const correctGIF = document.createElement("img");
+        correctGIF.src = "correct.gif";
+        correctGIF.alt = "Correct GIF";
+        correctGIF.style.width = "200px";
+        correctGIF.style.height = "auto";
+        gifContainer.innerHTML = "";
+        gifContainer.appendChild(correctGIF);
     } else {
-        gifContainer.innerHTML = '<img src="incorrect.gif" alt="Incorrect GIF">';
+        const incorrectGIF = document.createElement("img");
+        incorrectGIF.src = "incorrect.gif";
+        incorrectGIF.alt = "Incorrect GIF";
+        incorrectGIF.style.width = "200px";
+        incorrectGIF.style.height = "auto";
+        gifContainer.innerHTML = "";
+        gifContainer.appendChild(incorrectGIF);
     }
 }

@@ -2,10 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: rgb(255, 192, 203);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quiz-container {
+    margin-top: 20px;
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: inline-block;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .question {
@@ -22,13 +31,17 @@ body {
 }
 
 .background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    z-index: -1; 
 }
 
 .moving-image {
-    position: absolute;
+    position: absolute; 
     width: 50px; 
     height: auto;
 }
