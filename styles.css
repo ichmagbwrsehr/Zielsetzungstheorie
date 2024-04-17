@@ -14,7 +14,8 @@ body {
     border-radius: 20px;
     display: inline-block;
     backdrop-filter: blur(10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px rgba(234, 3, 255, 0.349);
+    margin-bottom: 20px;
 }
 
 .question {
@@ -44,4 +45,30 @@ body {
     position: absolute; 
     width: 50px; 
     height: auto;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #ff22ed73;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    box-shadow: 0 0 8px rgba(234, 3, 255, 0.349);
+}
+
+button:hover {
+    background-color: #24baff5b; 
+    box-shadow: 0 0 8px #24baff5b;
+
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #ff0000b4; 
+    box-shadow: 0 0 8px #ff0000b4;
 }
