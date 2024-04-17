@@ -52,6 +52,9 @@ function checkAnswers() {
         correctPNG.style.width = "200px";
         correctPNG.style.height = "auto";
         gifContainer.appendChild(correctPNG);
+
+        const audioCorrect = new Audio("correct.wav");
+        audioCorrect.play();
     } else {
         const incorrectGIF = document.createElement("img");
         incorrectGIF.src = "incorrect.gif";
@@ -67,5 +70,8 @@ function checkAnswers() {
         incorrectPNG.style.width = "200px";
         incorrectPNG.style.height = "auto";
         gifContainer.appendChild(incorrectPNG);
+
+        const audioIncorrect = new Audio("incorrect.mp3");
+        audioIncorrect.play();
     }
 }
